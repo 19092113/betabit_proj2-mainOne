@@ -211,7 +211,7 @@ public class main {
 
         if (stringChecker.isFullName(fullname1)) {
             if (password1.equals(password2)) {
-                if (!stringChecker.alreadyRegistered(username) && stringChecker.isValid(username)) {
+                if (!StringChecker.alreadyRegistered(username) && stringChecker.isValid(username)) {
                     Data.addUser(new User(username, fullname1, position1, password1));
                     Data.addUserData(new UserData(0, 0, 0, username, 0));
                 }
@@ -239,7 +239,7 @@ public class main {
     }
 
     @FXML
-    void buyShop1(ActionEvent event) {
+    void BuyShop(ActionEvent event) {
         String item1 = "Blijdorp";
         int kosten1 = 2000;
 

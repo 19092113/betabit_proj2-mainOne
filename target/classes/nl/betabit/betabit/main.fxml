@@ -151,7 +151,7 @@
                                                 <Text layoutX="5.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2000 Ecopoints" wrappingWidth="100.0" />
                                              </children>
                                           </Pane>
-                                          <Button fx:id="buyItem" layoutX="132.0" layoutY="101.0" mnemonicParsing="false" onAction="#buyShop1" prefHeight="30.0" prefWidth="58.0" text="Buy" />
+                                          <Button fx:id="buyItem" layoutX="132.0" layoutY="101.0" mnemonicParsing="false" onAction="#BuyShop" prefHeight="30.0" prefWidth="58.0" text="Buy" />
                                        </children>
                                     </Pane>
                                  </children></AnchorPane>
