@@ -211,18 +211,12 @@ public class main {
 
         if (stringChecker.isFullName(fullname1)) {
             if (password1.equals(password2)) {
-                if (!stringChecker.alreadyRegistered(username) && stringChecker.isValid(username)) {
+                if (!StringChecker.alreadyRegistered(username) && stringChecker.isValid(username)) {
                     Data.addUser(new User(username, fullname1, position1, password1));
                     Data.addUserData(new UserData(0, 0, 0, username, 0));
                 }
             }
         }
-    }
-
-
-    @FXML
-    void removeUserLookup(ActionEvent event) {
-
     }
 
     @FXML
@@ -236,6 +230,14 @@ public class main {
     @FXML
     void UpdatePicture(ActionEvent event) {
 
+    }
+    @FXML
+    void removeUserLookup(ActionEvent event) {
+        for (int i = 0; i < Data.user.size(); i++) {
+            if (Data.user.get(i).getMail().equals(removeUser.getText())) {
+                removeUserInfo.setText(Data.user.get(i).getFullname() + " " + Data.user.get(i).getPosition());
+            }
+        }
     }
 
     @FXML
