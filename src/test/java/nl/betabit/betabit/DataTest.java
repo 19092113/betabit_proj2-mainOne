@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class DataTest {
 
     @Test
-    void setRewardLog() {
+    void setRewardLog_True() {
         ArrayList<RewardLog> rewardLog = new ArrayList<>();
         rewardLog.add(new RewardLog("test", "test", 4,""));
         Data.setRewardLog(rewardLog);
@@ -17,7 +17,7 @@ class DataTest {
     }
 
     @Test
-    void setLog() {
+    void setLog_True() {
         ArrayList<distanceLog> log = new ArrayList<>();
         log.add(new distanceLog("test", "test", "Lopen",23,100,1111));
         Data.setLog(log);
